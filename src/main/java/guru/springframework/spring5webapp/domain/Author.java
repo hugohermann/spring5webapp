@@ -53,6 +53,9 @@ public class Author {
         return books;
     }
 
+    public void setBooks(Set<Book> books) {
+        this.books = books;
+    }
 
     @Override
     public String toString() {
@@ -78,9 +81,4 @@ public class Author {
     public int hashCode() {
         return id != null ? id.hashCode() : 0;
     }
-
-    public void setBooks(Set<Book> books) {
-        this.books = books;
-    }
-
 }
